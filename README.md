@@ -2,6 +2,8 @@
 
 This project is a YouTube-like platform with features such as video upload, transcoding, and adaptive bitrate streaming. It leverages AWS S3 for storage, Kafka for message handling, Node.js for the backend, and Next.js for the frontend.
 
+
+
 ## Table of Contents
 - [Features](#features)
 - [Technologies Used](#technologies-used)
@@ -32,6 +34,7 @@ This project is a YouTube-like platform with features such as video upload, tran
 - **OAuth**: User authentication
 
 ## System Design
+![Screenshot (13)](https://github.com/geekychandan/AdaptiveBitrateStream/assets/110468423/f58e1717-4d59-4d96-98ab-6e8af382c482)
 The system consists of three main services:
 1. **Upload Service**: Handles video uploads from the frontend, processes them in chunks, and uploads them to S3.
 2. **Watch Service**: Manages video playback, generates signed URLs for S3 files, and retrieves video details from the database.
@@ -84,16 +87,13 @@ Follow the steps below to install and setup the project:
     ```
 
   ## Services
-
-    **Upload Service**
-    -*Chunking*: Splits video files into chunks on the client side.
-    -*Multi-Part Upload*: Uploads video chunks to S3 and reassembles them into a single file.
-
-    **Watch Service**
+   **Upload Service**
+   -*Chunking*: Splits video files into chunks on the client side.
+   -*Multi-Part Upload*: Uploads video chunks to S3 and reassembles them into a single file.
+  **Watch Service**
     -*Signed URLs*: Generates signed URLs for secure video playback.
     -*Database Integration*: Retrieves video details from PostgreSQL.
-
-    **Transcoder Service**
+  **Transcoder Service**
     -*Video Transcoding*: Uses FFMPEG to convert videos into multiple bitrates and formats.
     -*Adaptive Bitrate Streaming*: Generates HLS and Dash manifests for adaptive streaming.
 
