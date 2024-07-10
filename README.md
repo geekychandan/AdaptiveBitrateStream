@@ -96,8 +96,8 @@ Follow the steps below to install and setup the project:
     -*Database Integration*: Retrieves video details from PostgreSQL.
     
   **Transcoder Service**
-    -*Video Transcoding*: Uses FFMPEG to convert videos into multiple bitrates and formats.
-    -*Adaptive Bitrate Streaming*: Generates HLS and Dash manifests for adaptive streaming.
+    -Video Transcoding: Uses FFMPEG to convert videos into multiple bitrates and formats.
+    -Adaptive Bitrate Streaming: Generates HLS and Dash manifests for adaptive streaming.
 
 
 ## Made By
