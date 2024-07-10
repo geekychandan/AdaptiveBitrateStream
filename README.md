@@ -89,6 +89,7 @@ Follow the steps below to install and setup the project:
   ## Services
    **Upload Service**
    -*Chunking*: Splits video files into chunks on the client side.
+   
    -*Multi-Part Upload*: Uploads video chunks to S3 and reassembles them into a single file.
    
   **Watch Service**
@@ -97,6 +98,7 @@ Follow the steps below to install and setup the project:
     
   **Transcoder Service**
     -Video Transcoding: Uses FFMPEG to convert videos into multiple bitrates and formats.
+    
     -Adaptive Bitrate Streaming: Generates HLS and Dash manifests for adaptive streaming.
 
 
